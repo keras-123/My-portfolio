@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les formulaires</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h1>formulaire d'inscription</h1>
+    <form method="post" action="traitement.php">
+        <fieldset id="section1">
+            <legend>infos personnelles</legend>
+            <label for="prenom">prenom</label>
+            <input type="text" id="prenom" name="prenom" autocomplete="on"><br>
+
+            <label for="pass">password</label>
+            <input type="password" id="pass" name="pass" required="required"><br>
+
+            <label for="naissance">date de naissance</label>
+            <input type="date" id="naissance" name="naissance"><br>
+
+            <label for="prez">name</label>
+            <input type="text" id="name" name="name"><br>
+    </fieldset>
+
+    <fieldset id="section2">
+        <legend>infos supplementaires</legend>
+        <label for="email">email</label>
+        <input type="email" id="email"><br>
+
+        <label for="tel">contact</label>
+        <input type="tel" id="tel" name="tel"><br>
+
+        <label for="country">country</label>
+        <input type="country" id="country" placeholder="enter country"><br>
+        <select name="country">
+            <option value="france">france</option>
+            <option value="Cameroon">Cameroon</option>
+            <option value="USA">USA</option>
+            <option value="senegal">senegal</option>
+            <option value="belgium">belgium</option>
+        </select> <br>
+        Homme ou Femme?<br>
+        <input type="radio" id="homme" name="sexe" value="homme">
+        <label for="homme">homme</label><br>
+
+        <input type="radio" id="femme" name="sexe" value="femme">
+        <label for="femme">femme</label><br>
+    </fieldset>
+
+
+
+        <input type="submit" value="envoyer ">
+    </form>
+</body>
+</html>
